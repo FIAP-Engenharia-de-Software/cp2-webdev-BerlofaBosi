@@ -6,6 +6,14 @@
 
 function corrigirValor(valor) {
   // TODO: implementar função
+
+  let numero = Number(valor);
+
+  if(isNaN(numero)) {
+    return "Valor inválido";
+  } else {
+    return numero;
+  }
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO

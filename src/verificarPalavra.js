@@ -11,6 +11,18 @@
 
 function verificarPalavra(frase, palavraBusca) {
   // TODO: implementar função
+
+  frase = (frase.trim()).toLowerCase();
+  palavraBusca = (palavraBusca.trim()).toLowerCase();
+
+  if(frase.length < 5) {
+    return "A frase é muito curta";
+  }
+  if(palavraBusca.includes(frase)) {
+    return "A frase contém a palavra de busca";
+  } else {
+    return "A frase não contém a palavra de busca";
+  }
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO

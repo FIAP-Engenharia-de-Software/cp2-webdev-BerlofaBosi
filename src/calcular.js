@@ -11,8 +11,25 @@
 
 function calcular(num1, num2, operador) {
   // TODO: implementar função
-}
 
+  if(isNaN(num1) || isNaN(num2)) {
+    return "Erro: parâmetros inválidos";
+  }
+  if(num1 === 0 || num2 === 0) {
+    return "Erro: divisão por zero";
+  }
+  if(operador == `+`) {
+    return num1 + num2;
+  } else if(operador == `-`) {
+    return num1 - num2;
+  } else if(operador == `*`) {
+    return num1 * num2;
+  } else if(operador == `/`) {
+    return num1 / num2;
+  } else {
+    return "Erro: operação inválida";
+  }
+}
 
 //NÃO REMOVA O CÓDIGO ABAIXO
 module.exports = { calcular };
